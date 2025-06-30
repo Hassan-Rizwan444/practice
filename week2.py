@@ -19,4 +19,3 @@ class book:
             return True
         else:
             return False
-    
