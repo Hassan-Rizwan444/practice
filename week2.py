@@ -19,3 +19,10 @@ class book:
             return True
         else:
             return False
+
+
+lib = library(200)
+b = book("Thomas Calculus", "Educational", 1450)
+
+print(lib.isEmpty())
+print(b.isPresent("Harry Potter"))
