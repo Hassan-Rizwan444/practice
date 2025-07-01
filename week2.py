@@ -6,7 +6,13 @@ class library:
         if (self.num <= 0):
             return True
         else:
-            return False    
+            return False  
+        
+    def add_books(self, number):
+        self.num += number
+        
+    def remove_books(self, number):
+        self.num -= number  
 
 class book:
     def __init__(self, name, genre, pages):
@@ -19,10 +25,17 @@ class book:
             return True
         else:
             return False
+        
+    def book_info(self):
+        return self.name, self.genre, self.pages
 
 
 lib = library(200)
-b = book("Thomas Calculus", "Educational", 1450)
-
 print(lib.isEmpty())
+lib.add_books(50)
+print(lib.num)
+lib.remove_books(250)
+print(lib.isEmpty())
+b = book("Thomas Calculus", "Educational", 1450)
 print(b.isPresent("Harry Potter"))
+print(b.book_info())
