@@ -14,7 +14,7 @@ class library:
     def remove_books(self, number):
         self.num -= number  
 
-class book:
+class book(library):
     def __init__(self, name, genre, pages):
         self.name = name
         self.genre = genre
