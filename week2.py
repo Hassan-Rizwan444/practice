@@ -36,6 +36,11 @@ lib.add_books(50)
 print(lib.num)
 lib.remove_books(250)
 print(lib.isEmpty())
+
 b = book("Thomas Calculus", "Educational", 1450)
 print(b.isPresent("Harry Potter"))
 print(b.book_info())
+
+b2 = book("The Hobbit", "Fantasy", 1200)
+print(b2.isPresent("Thomas Calculus"))
+print(b2.book_info())
